@@ -24,7 +24,9 @@ export const AuthPage = () => {
         try {
             const data = await request('/auth/login', 'POST', {...form})
             auth.login(data.accessToken, data._id, data.role)
-        } catch (e) {}
+        } catch (e) {
+            message(e)
+        }
     }
 
     return (

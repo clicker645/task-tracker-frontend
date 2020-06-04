@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import {NavLink,useHistory} from "react-router-dom";
-import {AuthContext, RoleAdmin} from "../context/AuthContext";
+import {AuthContext, RoleAdmin} from "../../context/AuthContext";
 
 export const Navbar = () => {
     const history = useHistory()
